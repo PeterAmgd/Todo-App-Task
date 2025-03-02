@@ -6,66 +6,152 @@ This project is a **TODO APP** built using **Laravel** (backend) and **Next.js**
 
 ## Features
 
-<ul>
-  <li>User authentication with Laravel Sanctum</li>
-  <li>Task creation, update, and deletion</li>
-  <li>File uploads with Laravel API</li>
-  <li>Responsive UI with Tailwind CSS</li>
-  <li>API integration with Next.js</li>
-</ul>
+- User authentication with Laravel Sanctum  
+- Task creation, update, and deletion  
+- File uploads with Laravel API  
+- Responsive UI with Tailwind CSS  
+- API integration with Next.js  
 
 ---
 
-## 🛠 Installation
+## Installation
 
 ### 1️⃣ Clone the Repository
+
 ```sh
 git clone https://github.com/PeterAmgd/Todo-App-Task.git
-cd your-repo
-2️⃣ Backend (Laravel) Setup
-<ol> <li>Navigate to the backend directory:</li>
+cd Todo-App-Task
+```
 
-<li>Install dependencies:</li>
+### 2️⃣ Backend (Laravel) Setup
 
-composer install
-<li>Copy the environment file:</li>
+1. Navigate to the backend directory:
 
-cp .env.example .env
-<li>Generate the application key:</li>
+   
 
-php artisan key:generate
-<li>Configure the <code>.env</code> file (Database, Mail, etc.).</li> <li>Run database migrations:</li>
+2. Install dependencies:
 
-php artisan migrate
-<li>Start the Laravel development server:</li>
+   ```sh
+   composer install
+   ```
 
-php artisan serve
-</ol>
-3️⃣ Frontend (Next.js) Setup
-<ol> <li>Navigate to the frontend directory:</li>
+3. Copy the environment file:
 
-<li>Install dependencies:</li>
+   ```sh
+   cp .env.example .env
+   ```
 
-npm install
-<li>Create an environment file:</li>
+4. Generate the application key:
 
-cp .env.local.example .env.local
-<li>Update the <code>.env.local</code> file with:</li>
+   ```sh
+   php artisan key:generate
+   ```
 
-NEXT_PUBLIC_BACKEND_URL=http://127.0.0.1:8000
-<li>Run the Next.js development server:</li>
+5. Configure the `.env` file (Database, Mail, etc.).
 
-npm run dev
-</ol>
-⚡ Usage
-<ul> <li>Open the frontend in your browser:</li>
+6. Run database migrations:
 
-http://localhost:3000
-<li>Login or Register.</li> <li>Create, update, and delete tasks.</li> <li>Upload attachments.</li> <li>View tasks with dynamic updates.</li> </ul>
-📜 API Endpoints (Backend)
-<table> <tr> <th>Method</th> <th>Endpoint</th> <th>Description</th> </tr> <tr> <td>POST</td> <td>/api/auth/login</td> <td>User Login</td> </tr> <tr> <td>POST</td> <td>/api/auth/register</td> <td>User Registration</td> </tr> <tr> <td>GET</td> <td>/api/list-tasks</td> <td>Fetch all tasks</td> </tr> <tr> <td>POST</td> <td>/api/list-tasks</td> <td>Create a new task</td> </tr> <tr> <td>PUT</td> <td>/api/list-tasks/{id}</td> <td>Update an existing task</td> </tr> <tr> <td>DELETE</td> <td>/api/list-tasks/{id}</td> <td>Delete a task</td> </tr> </table>
-📌 Technologies Used
-Backend (Laravel)
-<ul> <li>Laravel 10</li> <li>Sanctum for authentication</li> <li>MySQL Database</li> <li>File Uploads with Storage</li> <li>RESTful API</li> </ul>
-Frontend (Next.js)
-<ul> <li>Next.js 14</li> <li>Tailwind CSS</li> <li>Axios for API requests</li> <li>React Hooks (useState, useEffect)</li> </ul>
+   ```sh
+   php artisan migrate
+   ```
+
+7. Start the Laravel development server:
+
+   ```sh
+   php artisan serve
+   ```
+
+---
+
+### 3️⃣ Frontend (Next.js) Setup
+
+1. Navigate to the frontend directory:
+
+   ```sh
+   cd frontend
+   ```
+
+2. Install dependencies:
+
+   ```sh
+   npm install
+   ```
+
+3. Create an environment file:
+
+   ```sh
+   cp .env.local.example .env.local
+   ```
+
+4. Update the `.env.local` file with:
+
+   ```sh
+   NEXT_PUBLIC_BACKEND_URL=http://127.0.0.1:8000
+   ```
+
+5. Run the Next.js development server:
+
+   ```sh
+   npm run dev
+   ```
+
+---
+
+## Usage
+
+1. Open the frontend in your browser:  
+
+   ```sh
+   http://localhost:3000
+   ```
+
+2. Login or Register.  
+3. Create, update, and delete tasks.  
+4. Upload attachments.  
+5. View tasks with dynamic updates.  
+
+---
+
+## API Endpoints (Backend)
+
+| Method | Endpoint               | Description            |
+|--------|------------------------|------------------------|
+| POST   | `/api/auth/login`      | User Login            |
+| POST   | `/api/auth/register`   | User Registration     |
+| GET    | `/api/list-tasks`      | Fetch all tasks       |
+| POST   | `/api/list-tasks`      | Create a new task     |
+| PUT    | `/api/list-tasks/{id}` | Update an existing task |
+| DELETE | `/api/list-tasks/{id}` | Delete a task         |
+
+---
+
+## Technologies Used
+
+### **Backend (Laravel)**
+
+- Laravel 10  
+- Sanctum for authentication  
+- MySQL Database  
+- File Uploads with Storage  
+- RESTful API  
+
+### **Frontend (Next.js)**
+
+- Next.js 14  
+- Tailwind CSS  
+- Axios for API requests  
+- React Hooks (`useState`, `useEffect`)  
+
+---
+
+
+
+
+
+**Peter Amgd**  
+📧 Email: [peteramgd143@gmail.com](mailto:peteramgd143@gmail.com)  
+🔗 [LinkedIn](https://linkedin.com/in/PeterAmgd)  
+🐙 [GitHub](https://github.com/PeterAmgd)  
+
+---
+
