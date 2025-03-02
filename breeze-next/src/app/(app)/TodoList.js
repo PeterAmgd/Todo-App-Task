@@ -27,7 +27,7 @@ const TodoList = ({ onAddTodo }) => {
 
       if (response.status === 201) {
         onAddTodo(response.data) // Pass the new todo back to the parent
-        console.log("List: ", response.data);
+        
 
         setTodo('') // Reset the todo input
       } else {
